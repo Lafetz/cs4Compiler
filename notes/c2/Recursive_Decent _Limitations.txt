@@ -1,0 +1,9 @@
+Inefficiency of Backtracking: Backtracking, employed when parsing fails along one path and the parser must explore alternative paths
+
+
+Limited Backtracking Scope:The limitation arises when the parser successfully applies a production rule for non-terminal X, 
+advances the parsing position, and then encounters a parsing failure downstream. In such cases,
+the parser cannot backtrack to a state where it could attempt a different production rule for X. check int*int from the img 
+general recursive-descent algo support such "full" backtracking
+
+left recursion
