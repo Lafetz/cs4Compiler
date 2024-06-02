@@ -1,0 +1,8 @@
+parsing table 
+* When constructing the parsing table, we look at each production rule of the form 
+  A→α, where A is a non-terminal and  α is a string of terminals and/or non-terminals.
+  For each terminal a in the First set of α, we add A→α to the parsing table entry M[A,a]
+  This means that when we encounter non-terminal A and the next input symbol is 
+  a, we know to apply the production rule A→α.
+* If ε is in FIRST(α), then for each terminal b in FOLLOW(A), add A → α to M[A,b]. 
+  If ε is in FIRST(α) and $ is in FOLLOW(A), add A → α to M[A,$].
